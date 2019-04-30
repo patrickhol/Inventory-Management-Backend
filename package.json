@@ -1,0 +1,64 @@
+{
+  "name": "inventory-backend",
+  "version": "1.0.0",
+  "description": "Api for inventory",
+  "main": "server.js",
+  "scripts": {
+    "api": "nodemon --exec yarn restart",
+    "build": "babel src --out-dir dist",
+    "restart": "rimraf dist && yarn build && yarn start",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrykho/Inventory-Management-Backend.git"
+  },
+  "author": "Patryk Holody",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrykho/Inventory-Management-Backend/issues"
+  },
+  "homepage": "https://github.com/patrykho/Inventory-Management-Backend#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.5",
+    "cuid": "^2.1.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.7",
+    "morgan": "^1.9.1",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.0.0",
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.2.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "express-swagger-generator": "^1.1.11",
+    "jest": "^24.0.0",
+    "mock-req-res": "^1.0.2",
+    "nodemon": "^1.14.6",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3"
+  }
+}

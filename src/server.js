@@ -19,9 +19,9 @@ app.use(morgan('dev'))
 
 app.post('/signup', signup)
 app.post('/signin', signin)
-app.use('/api/item', itemRouter)
-app.use('/api', protect)
-app.use('/api/user', userRouter)
+app.use('/api/v1/item', itemRouter)
+app.use('/api/v1', protect)
+app.use('/api/v1/user', userRouter)
 
 export const start = async () => {
   try {
